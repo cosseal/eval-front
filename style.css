@@ -26,28 +26,35 @@ section {
     text-transform: uppercase;
     width:60%;
     float:left;
-    border: 1px solid black;
     text-align: center;
 
 }
 
 .blocks {
-    width: 33%;
+    width: 33.33%;
     height: 33%;
     text-align: center;
     min-height: 33%;
-    border: 1px solid black;
+}
 
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 #line1{
     width: 100%;
-    vertical-align: middle;
     max-height: 33%;
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 66.5% 33.5%;
+    grid-column-gap: 0;
+    grid-template-rows: 100%;
 
 }
 .rect{
     background: #67a3ff;
+    width: 100%;
+    min-height: 33%;
 }
 
 #descr {
@@ -69,84 +76,75 @@ section {
 
 #profil {
     background: #ff8d1c;
-    width: 33%;
-    flex: 1;
-    padding-right:11.5%;
-    padding-left:11.5%;
-    padding-bottom: 13%;
-    padding-top: 13%;
+    padding:33%
 }
 
-#line2 {
+#line2, #line3 {
     width: 100%;
-    display: inline-flex;
-    vertical-align: middle;
     max-height: 33%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 0;
+    text-align: center;
 }
 
 #experience {
     background: #09ff10;
-    padding-top:13%;
-    padding-bottom: 13%;
+    padding-right:33.3%;
+    padding-left:33.3%;
+    padding-bottom: 31%;
+    padding-top: 31%;
 }
 
 #formation {
-    background: greenyellow;
-    flex: 1;
-    padding-top:13%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 13%;
+    background: rgba(255, 47, 40, 0.6);
+    padding-right:33.3%;
+    padding-left:33.3%;
+    padding-bottom: 31%;
+    padding-top: 31%;
 }
 
 #blog {
-    background: greenyellow;
-    flex: 1;
-    padding-top:13%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 13%;
+    background: #09ff10;
+    padding-right:33.3%;
+    padding-left:33.3%;
+    padding-bottom: 31%;
+    padding-top: 31%;
 }
 
-#line3 {
-    width: 100%;
-    display: inline-flex;
-    vertical-align: middle;
-    max-height: 33%;
-
-}
 
 #reseaux {
-    background: greenyellow;
-    padding-top:11.2%;
-    padding-bottom: 11.2%;
-    padding-right: 2.6%;
-    padding-left: 2.6%;
+    background: #67a3ff;
+    padding-right:33.3%;
+    padding-left:33.3%;
+    padding-bottom: 31%;
+    padding-top: 31%;
 }
 
 #contact {
     background: greenyellow;
-    padding-top:13%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 13%;
+    padding-right:33.3%;
+    padding-left:33.3%;
+    padding-bottom: 31%;
+    padding-top: 31%;
 }
 
 #portfolio {
-    background: greenyellow;
-    padding-top:13%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    padding-bottom: 13%;
+    background: rgba(255, 47, 40, 0.6);
+    padding-right:33.3%;
+    padding-left:33.3%;
+    padding-bottom: 31%;
+    padding-top: 30.5%;
 }
 #photos {
-    width: 39%;
+    width: 40%;
     float: right;
-    border: 1px solid black;
-   height: auto;
+    height: 100%;
 }
 
-
+img {
+    width: 100%;
+}
 
 
 
