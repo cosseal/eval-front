@@ -6,14 +6,148 @@ body {
 }
 
 section {
-    background: darkgray;
+    position: absolute;
+    background: rgba(169, 169, 169, 0.54);
     width: 80%;
-    text-align: center;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1em;
+    padding-left:0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
     font-family: "helvetica",sans-serif;
     color: white;
+    font-size: larger;
 }
 
-#présentation {}
-.blocks {}
+#présentation {
+    text-transform: uppercase;
+    width:60%;
+    float:left;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.blocks {
+    width: 33%;
+    height: 33%;
+    text-align: center;
+    min-height: 33%;
+    border: 1px solid black;
+
+}
+#line1{
+    width: 100%;
+    vertical-align: middle;
+    max-height: 33%;
+    display: inline-flex;
+
+}
+.rect{
+    background: #67a3ff;
+}
+
+#descr {
+    font-size: 15px;
+    text-transform: none;
+}
+#CV {
+    float: left;
+    margin-left: 20%;
+    border: 1.2px solid white;
+    padding: 2%;
+}
+#cont {
+    float: left;
+    margin-left: 10%;
+    border: 1.2px solid white;
+    padding: 2%;
+}
+
+#profil {
+    background: #ff8d1c;
+    width: 33%;
+    flex: 1;
+    padding-right:11.5%;
+    padding-left:11.5%;
+    padding-bottom: 13%;
+    padding-top: 13%;
+}
+
+#line2 {
+    width: 100%;
+    display: inline-flex;
+    vertical-align: middle;
+    max-height: 33%;
+}
+
+#experience {
+    background: #09ff10;
+    padding-top:13%;
+    padding-bottom: 13%;
+}
+
+#formation {
+    background: greenyellow;
+    flex: 1;
+    padding-top:13%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 13%;
+}
+
+#blog {
+    background: greenyellow;
+    flex: 1;
+    padding-top:13%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 13%;
+}
+
+#line3 {
+    width: 100%;
+    display: inline-flex;
+    vertical-align: middle;
+    max-height: 33%;
+
+}
+
+#reseaux {
+    background: greenyellow;
+    padding-top:11.2%;
+    padding-bottom: 11.2%;
+    padding-right: 2.6%;
+    padding-left: 2.6%;
+}
+
+#contact {
+    background: greenyellow;
+    padding-top:13%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 13%;
+}
+
+#portfolio {
+    background: greenyellow;
+    padding-top:13%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 13%;
+}
+#photos {
+    width: 39%;
+    float: right;
+    border: 1px solid black;
+   height: auto;
+}
+
+
+
+
 
 
