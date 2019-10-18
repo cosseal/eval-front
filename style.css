@@ -19,7 +19,8 @@ section {
     padding-bottom: 0.5em;
     font-family: "helvetica",sans-serif;
     color: white;
-    font-size: larger;
+    font-size: medium;
+
 }
 
 #présentation {
@@ -27,7 +28,13 @@ section {
     width:60%;
     float:left;
     text-align: center;
-
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 0;
+}
+p {
+    font-size: small;
 }
 
 .blocks {
@@ -42,31 +49,28 @@ a {
     text-decoration: none;
     color: white;
 }
-#line1{
-    width: 100%;
-    max-height: 33%;
-    display: grid;
-    grid-template-columns: 66.5% 33.5%;
-    grid-column-gap: 0;
-    grid-template-rows: 100%;
+span {text-align: center}
 
-}
 .rect{
     background: #67a3ff;
     width: 100%;
     min-height: 33%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
 }
 
 #descr {
-    font-size: 15px;
+    font-size: 13px;
     text-transform: none;
 }
 #CV {
     float: left;
-    margin-left: 20%;
+    padding:2%;
+    margin-left: 10%;
     border: 1.2px solid white;
-    padding: 2%;
 }
+
 #cont {
     float: left;
     margin-left: 10%;
@@ -76,24 +80,15 @@ a {
 
 #profil {
     background: #ff8d1c;
-    padding:33%
-}
-
-#line2, #line3 {
-    width: 100%;
-    max-height: 33%;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-column-gap: 0;
-    text-align: center;
+    padding:34%;
 }
 
 #experience {
     background: #09ff10;
     padding-right:33.3%;
     padding-left:33.3%;
-    padding-bottom: 31%;
-    padding-top: 31%;
+    padding-bottom: 32%;
+    padding-top: 36%;
 }
 
 #formation {
@@ -101,15 +96,15 @@ a {
     padding-right:33.3%;
     padding-left:33.3%;
     padding-bottom: 31%;
-    padding-top: 31%;
+    padding-top: 36%;
 }
 
 #blog {
     background: #09ff10;
-    padding-right:33.3%;
-    padding-left:33.3%;
+    padding-right:33.4%;
+    padding-left:33.33%;
     padding-bottom: 31%;
-    padding-top: 31%;
+    padding-top: 36%;
 }
 
 
@@ -118,7 +113,7 @@ a {
     padding-right:33.3%;
     padding-left:33.3%;
     padding-bottom: 31%;
-    padding-top: 31%;
+    padding-top: 35%;
 }
 
 #contact {
@@ -126,7 +121,7 @@ a {
     padding-right:33.3%;
     padding-left:33.3%;
     padding-bottom: 31%;
-    padding-top: 31%;
+    padding-top: 35%;
 }
 
 #portfolio {
@@ -134,7 +129,7 @@ a {
     padding-right:33.3%;
     padding-left:33.3%;
     padding-bottom: 31%;
-    padding-top: 30.5%;
+    padding-top: 35%;
 }
 #photos {
     width: 40%;
@@ -146,6 +141,47 @@ img {
     width: 100%;
 }
 
+
+/* mediaqueries pour tablettes*/
+@media (max-width:1338px)
+{
+    #présentation
+    { width: 100%;
+        padding:0;}
+
+}
+
+/*pour smartphone*/
+@media (max-width: 812px)
+{
+    #présentation {
+        width: 100%;
+        padding: 0;}
+    .rect {
+        width: 100%;
+        min-width: 620px;
+    }
+    #photos {
+        width: 100%;
+    }
+    #hamburger-menu >a
+    {display:none}
+
+    #hamburger-menu > span
+    {display: inline-block}
+
+    #hamburger-menu:hover > a
+    {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    #hamburger-menu:hover > span{
+        transform: rotate(90deg);
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+}
 
 
 
